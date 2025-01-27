@@ -17,6 +17,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
+    - name: Say Hello
+      run: echo "Hello from GitHub Actions!"
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
